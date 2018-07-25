@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         mCoordinatorTabLayout = (CoordinatorTabLayout) findViewById(R.id.coordinatortablayout);
         mCoordinatorTabLayout.setTranslucentStatusBar(this)
-                .setTitle("Demo")
+                .setTitle("")
                 .setBackEnable(true)
                 .setImageArray(mImageArray, mColorArray)
                 .setupWithViewPager(mViewPager);

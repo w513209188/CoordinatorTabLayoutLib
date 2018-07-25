@@ -89,8 +89,12 @@ public class CoordinatorTabLayout extends CoordinatorLayout {
         int tabIndicatorColor = typedArray.getColor(R.styleable.CoordinatorTabLayout_tabIndicatorColor, Color.WHITE);
         mTabLayout.setSelectedTabIndicatorColor(tabIndicatorColor);
 
-        int tabTextColor = typedArray.getColor(R.styleable.CoordinatorTabLayout_tabTextColor, Color.WHITE);
-        mTabLayout.setTabTextColors(ColorStateList.valueOf(tabTextColor));
+        int tabIndicatorBgColor = typedArray.getColor(R.styleable.CoordinatorTabLayout_tabIndicatorBackBgColor, Color.WHITE);
+        mTabLayout.setBackgroundColor(tabIndicatorBgColor);
+
+        int tabTextColor = typedArray.getColor(R.styleable.CoordinatorTabLayout_tabTextColor, Color.BLACK);
+        int tabSelectTextColor = typedArray.getColor(R.styleable.CoordinatorTabLayout_tabSelectTextColor, Color.BLACK);
+        mTabLayout.setTabTextColors(tabTextColor,tabSelectTextColor);
         typedArray.recycle();
     }
 
